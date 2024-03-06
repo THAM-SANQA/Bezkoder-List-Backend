@@ -3,11 +3,11 @@ const cors = require("cors");
 
 const app = express();
 
-var corsOptions = {
-  origin: "https://bezkoder-list-frontend.onrender.com"
-};
+// var corsOptions = {
+//   origin: "https://bezkoder-list-frontend.onrender.com"
+// };
 
-app.use(cors(corsOptions));
+app.use(cors());
 
 // parse requests of content-type - application/json
 app.use(express.json());
