@@ -93,7 +93,7 @@ exports.update = (req, res) => {
 exports.delete = (req, res) => {
   const id = req.params.id;
 
-  Tutorial.findByIdAndRemove(id, { useFindAndModify: false })
+  Tutorial.findOneAndDelete({ _id: id })
     .then(data => {
       if (!data) {
         res.status(404).send({
@@ -111,6 +111,7 @@ exports.delete = (req, res) => {
       });
     });
 };
+
 
 // Delete all Tutorials from the database.
 exports.deleteAll = (req, res) => {
