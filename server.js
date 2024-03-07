@@ -3,10 +3,12 @@ const cors = require("cors");
 
 const app = express();
 
+// specifying link with direct access to backend
 // var corsOptions = {
 //   origin: "https://bezkoder-list-frontend.onrender.com"
 // };
 
+// allow access from any frontend host
 app.use(cors());
 
 // parse requests of content-type - application/json
