@@ -3,16 +3,16 @@ const cors = require("cors");
 
 const app = express();
 
-<<<<<<< HEAD
-var corsOptions = {
-  origin: "https://bezkoder-list-frontend.onrender.com"
-};
-=======
-// specifying link with direct access to backend
+// <<<<<<< HEAD
 // var corsOptions = {
 //   origin: "https://bezkoder-list-frontend.onrender.com"
 // };
->>>>>>> eb3d1f3f17730d4839a490da294a5f4bf836e361
+// =======
+// // specifying link with direct access to backend
+// // var corsOptions = {
+// //   origin: "https://bezkoder-list-frontend.onrender.com"
+// // };
+// >>>>>>> eb3d1f3f17730d4839a490da294a5f4bf836e361
 
 // allow access from any frontend host
 app.use(cors());
